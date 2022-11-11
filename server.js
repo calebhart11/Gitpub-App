@@ -4,15 +4,19 @@ const express = require("express")
 const app = express()
 const morgan = require("morgan")
 const methodOverride = require("method-override")
+const drinks = require("./models/drinks")
 
 
 //================= Middleware
-
+app.use(morgan("tiny"))
 
 
 //========= Routes
 app.get("/", (req, res) => {
     res.send("Welcome To The Gitpub App!")
+});
+app.get("/drinks", (req, res) => {
+    res.send(drinks)
 });
 
 
