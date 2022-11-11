@@ -7,14 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome To Gitpub
+    <h1>Welcome To Gitpub</h1>
+    <h2>List of Drinks</h2>
+    <ul>
+       <% drinks.forEach((drinks, index) => { %>
+        <a href="/drinks/<%= index %>"><li><%= drinks.name.charAt(0).toUpperCase() + drinks.name.slice(1) %></li></a> 
+        <% }) %>
+    </ul>
         <style>
             body{
                 background-color: rgb(251, 188, 70);
                 color: rgb(18, 255, 176)
             }
         </style>
-    </h1>
     
 </body>
 </html>

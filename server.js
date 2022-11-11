@@ -16,7 +16,16 @@ app.get("/", (req, res) => {
     res.send("Welcome To The Gitpub App!")
 });
 app.get("/drinks", (req, res) => {
-    res.render("../views/drinks_index.ejs")
+    res.render("../views/drinks_index.ejs",{drinks})
+});
+
+
+//show
+app.get("/drinks/:id", (req, res) => {
+    res.render("../views/drinks_show.ejs", {
+        drink: drinks[req.params.id],
+        index: req.params.id
+    });
 });
 
 

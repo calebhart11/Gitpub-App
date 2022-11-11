@@ -39,5 +39,5 @@ const drinks = [
       price: 56,
       image: 'https://i.imgur.com/MbVdwZz.jpg'
     }
-  ]
+  ] 
   module.exports = drinks
