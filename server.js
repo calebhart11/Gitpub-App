@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
     res.send("Welcome To The Gitpub App!")
 });
 app.get("/drinks", (req, res) => {
-    res.send(drinks)
+    res.render("../views/drinks_index.ejs")
 });
 
 
