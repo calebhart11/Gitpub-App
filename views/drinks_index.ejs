@@ -8,11 +8,17 @@
 </head>
 <body>
     <h1>Welcome To Gitpub</h1>
-    <h2>List of Drinks</h2>
+    <h2>List Of Drinks</h2>
     <ul>
        <% drinks.forEach((drinks, index) => { %>
         <a href="/drinks/<%= index %>"><li><%= drinks.name.charAt(0).toUpperCase() + drinks.name.slice(1) %></li></a> 
         <% }) %>
+    </ul>
+    <h2>List Of Food</h2>
+    <ul>
+        <% food.forEach((food, index) => { %>
+            <a href="/food/<%= index %>"><li><%= food.name.charAt(0).toUpperCase() + food.name.slice(1) %></li></a> 
+            <% }) %>
     </ul>
         <style>
             body{
