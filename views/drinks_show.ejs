@@ -7,6 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <%= drink.name %>
+    <h1>At Foo Bar</h1>
+    <h2><%= drink.name %></h2>
+    <h3><%= drink.price %></h3>
+    <img src="<%=drink.image%>" alt="">
+    <br>
+<a href="/drinks"><button>Back</button</a>
+        <style>
+            body{
+                background-color: rgb(251, 188, 70);
+                color: rgb(18, 255, 176)
+            };
+            img{
+                size: 50px;
+            };
+        </style>
+    
 </body>
 </html>

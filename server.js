@@ -5,6 +5,7 @@ const app = express()
 const morgan = require("morgan")
 const methodOverride = require("method-override")
 const drinks = require("./models/drinks")
+const router = express.Router()
 
 
 //================= Middleware
